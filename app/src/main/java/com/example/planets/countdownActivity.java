@@ -27,7 +27,7 @@ public class countdownActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(  );
-                intent.setClass( countdownActivity.this,MainActivity.class );
+                intent.setClass( countdownActivity.this,LoginActivity.class );
                 startActivity( intent );
             }
         } );
@@ -48,7 +48,7 @@ public class countdownActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Intent intent = new Intent();
-                intent.setClass(countdownActivity.this , MainActivity.class );
+                intent.setClass(countdownActivity.this , LoginActivity.class );
                 startActivity( intent );
             }
             private void startActivity(Intent intent) {
